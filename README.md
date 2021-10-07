@@ -6,7 +6,7 @@
 * Setup Unity git integration for all developers.
 
 ### *Current State:*
-* ***Pre-Development***
+* ***Prototyping***
 
 ### *Team Members:*
 * Ethan (Slender#9518)
