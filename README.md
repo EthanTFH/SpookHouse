@@ -1,7 +1,7 @@
 # Team2HorrorGame
 
 ### *Current State:*
-* ***Prototyping***
+* ***Development***
 
 ### *Team Members:*
 * Ethan (Slender#9518)
