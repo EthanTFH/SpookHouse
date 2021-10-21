@@ -5,12 +5,11 @@ using UnityEngine;
 public class FlashlightManager : MonoBehaviour
 {
 
-    private Light l;
+    public GameObject l;
 
     // Start is called before the first frame update
     void Start()
     {
-        l = gameObject.GetComponent<Light>();
     }
 
     // Update is called once per frame
@@ -18,13 +17,13 @@ public class FlashlightManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (l.enabled)
+            if (l.activeInHierarchy)
             {
-                l.enabled = false;
+                l.SetActive(false);
             }
             else
             {
-                l.enabled = true;
+                l.SetActive(true);
             }
         }
     }

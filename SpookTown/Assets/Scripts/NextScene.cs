@@ -13,6 +13,7 @@ public class NextScene : MonoBehaviour
 
     public float timeBetweenCharacter = 0.08f;
     public Text textLabel;
+    public Text promptLabel;
 
     public string[] dialog = {"You hadn't heard from your grandma in some time...", "You decided this would be a good time for a visit\nto see how she is doing.",
     "'Unusual weather we are having, you should have stayed home.'\nYou already knew what she was going to say.",
@@ -73,6 +74,13 @@ public class NextScene : MonoBehaviour
         }
     }
 
+    public IEnumerator flashlightPrompt()
+    {
+        promptLabel.text = "Press [f] to toggle your flashlight!";
+        yield return new WaitForSeconds(5);
+        promptLabel.text = "";
+    }
+
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger entered");
@@ -88,6 +96,10 @@ public class NextScene : MonoBehaviour
                 int num = int.Parse(parts[1]);
                 string diag = dialog[num];
                 StartCoroutine(addDialog(diag));
+            }
+            if(other.gameObject.name == "FlashlightTrigger")
+            {
+                StartCoroutine("flashlightPrompt");
             }
         }
     }
