@@ -15,6 +15,7 @@ public class NextScene : MonoBehaviour
     public Text textLabel;
     public Text promptLabel;
 
+    public int nextDiag = 0;
     public string[] dialog = {"You hadn't heard from your grandma in some time...", "You decided this would be a good time for a visit\nto see how she is doing.",
     "'Unusual weather we are having, you should have stayed home.'\nYou already knew what she was going to say.",
     "Little did you know what was behind that door."};
@@ -64,13 +65,19 @@ public class NextScene : MonoBehaviour
         SceneManager.LoadScene(currentScene + 1, LoadSceneMode.Single);
     }
 
-    public IEnumerator addDialog(string diag)
+    public IEnumerator addDialog(int num)
     {
-        textLabel.text = "";
-        for(int i = 0; i < diag.ToCharArray().Length; i++)
+        if (num == nextDiag)
         {
-            textLabel.text += diag.ToCharArray()[i];
-            yield return new WaitForSeconds(timeBetweenCharacter);
+            string diag = dialog[num];
+            textLabel.text = "";
+            for (int i = 0; i < diag.ToCharArray().Length; i++)
+            {
+                textLabel.text += diag.ToCharArray()[i];
+                yield return new WaitForSeconds(timeBetweenCharacter);
+            }
+            nextDiag++;
+            Debug.Log("That was " + num + "; next is " + nextDiag);
         }
     }
 
@@ -94,8 +101,7 @@ public class NextScene : MonoBehaviour
             if(parts[0] == "DialogCollide")
             {
                 int num = int.Parse(parts[1]);
-                string diag = dialog[num];
-                StartCoroutine(addDialog(diag));
+                StartCoroutine(addDialog(num));
             }
             if(other.gameObject.name == "FlashlightTrigger")
             {
