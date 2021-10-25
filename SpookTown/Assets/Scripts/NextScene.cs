@@ -71,13 +71,12 @@ public class NextScene : MonoBehaviour
         {
             string diag = dialog[num];
             textLabel.text = "";
-            for (int i = 0; i < diag.ToCharArray().Length; i++)
+            nextDiag++;
+			for (int i = 0; i < diag.ToCharArray().Length; i++)
             {
                 textLabel.text += diag.ToCharArray()[i];
                 yield return new WaitForSeconds(timeBetweenCharacter);
             }
-            nextDiag++;
-            Debug.Log("That was " + num + "; next is " + nextDiag);
         }
     }
 
