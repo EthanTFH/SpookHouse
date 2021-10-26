@@ -22,6 +22,8 @@ public class NextScene : MonoBehaviour
 
     private Scene scene;
 
+    public bool canProgress = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -87,12 +89,28 @@ public class NextScene : MonoBehaviour
         promptLabel.text = "";
     }
 
+    public IEnumerator promptNoProgress()
+    {
+        string diag = "You cannot progress yet.";
+        for (int i = 0; i < diag.ToCharArray().Length; i++)
+        {
+            textLabel.text += diag.ToCharArray()[i];
+            yield return new WaitForSeconds(timeBetweenCharacter);
+        }
+        yield return new WaitForSeconds(5);
+        textLabel.text = "";
+    }
+
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger entered");
-        if (other.gameObject.name == "EnterHouseEvent")
+        if (other.gameObject.name == "NextScene" && (canProgress || isPathwayScene))
         {
             StartCoroutine("startFade");
+        }
+        else if (other.gameObject.name == "NextScene" && !(canProgress || isPathwayScene))
+        {
+            StartCoroutine("promptNoProgress");
         }
         else
         {
