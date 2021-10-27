@@ -7,9 +7,12 @@ public class FlashlightManager : MonoBehaviour
 
     public GameObject l;
 
+    private AudioSource sound;
+
     // Start is called before the first frame update
     void Start()
     {
+        sound = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -17,6 +20,7 @@ public class FlashlightManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
+            sound.Play();
             if (l.activeInHierarchy)
             {
                 l.SetActive(false);
