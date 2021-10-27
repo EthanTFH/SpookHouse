@@ -7,11 +7,17 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Outside.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: 560214bd114ce004d9e229d7a7b6ea1c
   - enabled: 1
     path: Assets/Scenes/Inside1.unity
     guid: b0ac74faa5198b744a157f7aca5daee8
   - enabled: 1
     path: Assets/Scenes/Inside2.unity
     guid: 22af305fa5b1c234c92982798663cb96
+  - enabled: 1
+    path: Assets/Scenes/Maze.unity
+    guid: 44bae83cf7bbd69449593ed90f0bea26
+  - enabled: 1
+    path: Assets/Scenes/Credits1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
