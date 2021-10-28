@@ -4828,7 +4828,7 @@ MonoBehaviour:
   - {fileID: 1041976681}
   displayTime: 1
   scrollTime: 1
-  scrollSpeed: 0.2
+  scrollSpeed: 0.5
 --- !u!1 &629103021 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1fb63c6a07a1ef845861a7f9d5acff05, type: 3}

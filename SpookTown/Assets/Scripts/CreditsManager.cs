@@ -20,7 +20,7 @@ public class CreditsManager : MonoBehaviour
         
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
         displayTime -= Time.deltaTime;
@@ -30,7 +30,7 @@ public class CreditsManager : MonoBehaviour
             scrollTime -= Time.deltaTime;
         }
 
-        if(scrollTime < -42 && !shownFinalEnd)
+        if(scrollTime < -32 && !shownFinalEnd)
         {
             StartCoroutine("creditsEnd");
             shownFinalEnd = true;

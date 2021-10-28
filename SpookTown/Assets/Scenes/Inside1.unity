@@ -3671,7 +3671,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 406.8, y: -323.5}
+  m_AnchoredPosition: {x: 370.8, y: -275.9}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1016933805
@@ -4529,7 +4529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -620.14, y: 329.22}
+  m_AnchoredPosition: {x: -545.8, y: 312.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1180083297
@@ -7707,13 +7707,13 @@ MonoBehaviour:
   promptLabel: {fileID: 1016933805}
   nextDiag: 0
   dialog:
-  - '"Welcome to my little funhouse." - Said a deep, demonic voice.'
-  - '"Grandma can''t help you here, she has been... taken care of, you might need
-    to find her."'
+  - '"Welcome to my little play house," said a deep, demonic voice.'
+  - '"''Where is grandma?'' Like I would tell you. Find the key, maybe you will find
+    your grandma."'
   - 
-  - '"Find the key, and maybe I will tell you where she is..."'
   - 
-  - '"You''re getting warmer, or colder, depending on how nice I want to be."'
+  - 
+  - '"Ohhh, you''re getting warmer... maybe." '
   - '"You''re on fire... maybe literally if you don''t solve the other puzzles."'
   - '"OH! You found it, good job. I guess now we can get to more fun!"'
   - 
