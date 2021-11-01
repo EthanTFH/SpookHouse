@@ -1,7 +1,7 @@
 # Team2HorrorGame
 
 ### *Current State:*
-* ***Published:***https://gibegy.itch.io/spookhouse
+* ***Published:*** https://gibegy.itch.io/spookhouse
 
 ### *Team Members:*
 * Ethan (Slender#9518)
