@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
     public GameObject OptionsButton;
     public GameObject QuitButton;
     public GameObject MainMenuPanel;
+    public GameObject MainMenuButton;
 
     // Start is called before the first frame update
     void Start()
