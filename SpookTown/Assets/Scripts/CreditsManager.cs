@@ -17,10 +17,10 @@ public class CreditsManager : MonoBehaviour
 
     void Start()
     {
-        
+        Cursor.lockState = CursorLockMode.None;
     }
 
-    void FixedUpdate()
+    void Update()
     {
 
         displayTime -= Time.deltaTime;
@@ -56,9 +56,11 @@ public class CreditsManager : MonoBehaviour
             finalThanks.color = objectColor;
             yield return null;
         }
+        /* Disabled because we now have buttons
         yield return new WaitForSeconds(10);
         Debug.Log("Application Quit, does not actually work in the editor.");
         Application.Quit();
+        */
     }
 
 }
