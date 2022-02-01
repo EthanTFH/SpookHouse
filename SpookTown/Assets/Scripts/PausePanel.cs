@@ -44,6 +44,7 @@ public class PausePanel : MonoBehaviour
         //Set time back to normal
         Time.timeScale = 1f;
         //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
         IsGamePaused = false;
         PausePanelPanel.SetActive(false);
