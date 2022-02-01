@@ -4,7 +4,7 @@
 * ***Published:*** https://gibegy.itch.io/spookhouse
 
 ### *Team Members:*
-* Ethan (Slender#9518)
+* Ethan (OfficerGibbie#0001)
 * James (CheerlessSnake#4853)
 * Conner (The Character#7896)
 
