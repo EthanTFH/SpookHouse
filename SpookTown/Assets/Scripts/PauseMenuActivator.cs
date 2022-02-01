@@ -5,7 +5,6 @@ using UnityEngine;
 public class PauseMenuActivator : MonoBehaviour
 {
     public GameObject PausePanel;
-    public PausePanel pausePanel;
     public bool allowPauseMenu;
 
     // Start is called before the first frame update
