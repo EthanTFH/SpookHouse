@@ -8023,7 +8023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 429414, guid: 2b1651cba65c4a444b1f544b21445d9e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 429414, guid: 2b1651cba65c4a444b1f544b21445d9e, type: 3}
       propertyPath: m_LocalScale.x
@@ -15402,7 +15402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 429414, guid: 2b1651cba65c4a444b1f544b21445d9e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 429414, guid: 2b1651cba65c4a444b1f544b21445d9e, type: 3}
       propertyPath: m_LocalScale.x
@@ -16538,6 +16538,10 @@ PrefabInstance:
     - target: {fileID: 4690075791331751071, guid: d73ccdeab7620d749ae891bc638f2aae, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6003719884321973674, guid: d73ccdeab7620d749ae891bc638f2aae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.99
       objectReference: {fileID: 0}
     - target: {fileID: 8389476710933496489, guid: d73ccdeab7620d749ae891bc638f2aae, type: 3}
       propertyPath: PausePanel
