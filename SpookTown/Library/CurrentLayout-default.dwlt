@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 989
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 939
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 2949
+  controlID: 6360
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 2950
+  controlID: 6361
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 2951
+  controlID: 6362
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -339,7 +339,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -400,7 +400,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 30c5ffff00cfffff8ad5ffffd8ecffff28f2ffff5af8ffff8c4b0000e05e0000a46d00005c6f000084700000
+      m_ExpandedIDs: b80dffffae14fffffe32ffff0493ffff6299ffff1af1ffff36f1ffff94f1ffff54fbffffe03f0000a4410000c0e801003aea0100dcee0100b81c0400
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -460,9 +460,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 751.0973, y: 281.3745, z: -12.866821}
+    m_Target: {x: 622.5679, y: 301.35266, z: -48.50628}
     speed: 2
-    m_Value: {x: 751.0973, y: 281.3745, z: -12.866821}
+    m_Value: {x: 622.5679, y: 301.35266, z: -48.50628}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -509,13 +509,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0063597537, y: 0.011594111, z: 0.0034001488, w: -1.0011424}
+    m_Target: {x: -0.033418216, y: 0.022194196, z: 0.0028582043, w: -1.0004286}
     speed: 2
-    m_Value: {x: -0.006356992, y: 0.01307965, z: 0.0033864211, w: -0.9998884}
+    m_Value: {x: -0.03337694, y: 0.022166783, z: 0.002854674, w: -0.9991929}
   m_Size:
-    m_Target: 323.48962
+    m_Target: 300.42783
     speed: 2
-    m_Value: 323.48962
+    m_Value: 300.42783
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -603,22 +603,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\James\Documents\GitHub\Team2HorrorGame\SpookTown
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 20}
-    m_SelectedIDs: d8490000
-    m_LastClickedID: 18904
-    m_ExpandedIDs: 00000000bc490000be490000c0490000c2490000c4490000c6490000c8490000ca490000cc490000ce490000d849000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 5a460000
+    m_LastClickedID: 18010
+    m_ExpandedIDs: 000000003446000036460000384600003a4600003c4600003e46000040460000424600004446000046460000484600006046000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,7 +646,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bc490000be490000c0490000c2490000c4490000c6490000c8490000ca490000cc490000ce490000d849000000ca9a3b
+    m_ExpandedIDs: 000000003446000036460000384600003a4600003c4600003e460000404600004246000044460000464600004846000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -723,9 +723,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 561.60004
-    width: 1139.8
-    height: 262
+    y: 667
+    width: 1425
+    height: 324
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &18
 MonoBehaviour:

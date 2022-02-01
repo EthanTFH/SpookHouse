@@ -11,6 +11,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
+        public GameObject PausePanel;
         [SerializeField] private bool m_IsWalking;
         [SerializeField] public float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -237,7 +238,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+            if (!PausePanel.activeSelf) {
+                m_MouseLook.LookRotation(transform, m_Camera.transform);
+            }
         }
 
 
