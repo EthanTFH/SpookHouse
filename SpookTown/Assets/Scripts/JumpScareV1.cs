@@ -7,6 +7,9 @@ public class JumpScareV1 : MonoBehaviour
 {
     public GameObject jumpScare;
     public float TimeOnScreen;
+    public bool EnableJumpscare = true;
+    public bool Repeatable = false;
+    bool hasTriggeredBefore = false;
 
 
     
@@ -18,9 +21,12 @@ public class JumpScareV1 : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered!!!!!");
-        jumpScare.SetActive(true);
-        StartCoroutine(WaitBeforeShow());
+        if (EnableJumpscare == true && hasTriggeredBefore == false)
+        {
+            Debug.Log("Triggered!!!!!");
+            jumpScare.SetActive(true);
+            StartCoroutine(WaitBeforeShow());
+        }
     }
 
     private IEnumerator WaitBeforeShow()
@@ -28,6 +34,10 @@ public class JumpScareV1 : MonoBehaviour
         yield return new WaitForSeconds(TimeOnScreen);
         Debug.Log("Waited for 2 seconds!");
         jumpScare.SetActive(false);
+        if (Repeatable == false)
+        {
+            hasTriggeredBefore = true;
+        }
     }
 
     // Update is called once per frame
